@@ -137,7 +137,6 @@ img {
 }
 
 .gridbox-items {
-    
     text-align: center;
     padding: 25px;
     margin: 5px;
@@ -220,14 +219,14 @@ img {
     display: grid;
     gap: 5px;
     grid-template-columns: 1fr 1fr ;
-    grid-template-rows: auto 1fr 1fr 50px;
+    grid-template-rows: auto 1fr 1fr auto;
     grid-template-areas: 'contacts contacts'
                          'info service '
                          'extras account'
                          'bottom bottom ';
 }
 
-@media (min-width:576px) {
+@media (min-width:768px) {
     .btn {
         font-size: 12px;
         width: 110px;
@@ -241,7 +240,7 @@ img {
     .gridbox-menu {
         gap: 15px;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 120px;
+        grid-template-rows: 1fr auto;
         grid-template-areas: 'main-menu main-menu main-menu '
                              'handbag  watch shoes';
     }
@@ -264,7 +263,7 @@ img {
 
     .gridbox-footer {  
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 50px;
+        grid-template-rows: 1fr 1fr auto;
         grid-template-areas: 'contacts contacts contacts contacts'
                              'info service extras account'
                              'bottom bottom bottom bottom';
