@@ -80,7 +80,7 @@ a:hover {
     display: grid;
     gap: 20px;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr ;
+    grid-template-rows: auto;
     grid-template-areas: 'main-menu'
                          'handbag'
                          'watch'
@@ -92,9 +92,7 @@ img {
 }
 
 .handbag, .watch, .shoes {
-    width: auto;
-    height: 120px;
-    
+    margin: auto;
 }
 
 .card-text {
